@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import base64
 import numpy as np
-import chardet
 
 grade_values = {'O': 10, 'A+': 9, 'A': 8, 'B+': 7, 'B': 6, 'C': 5, 'RA': 0, 'AB': 0}
 
@@ -142,6 +141,7 @@ def main():
     )
     st.title("GPA  and  CGPA CALCULATOR - INFO TECH  :books:")
 
+    # Input number of semesters
     num_semesters = st.number_input("Enter the number of semesters:", min_value=0, value=0, step=1)
     num_subjects=2
 
